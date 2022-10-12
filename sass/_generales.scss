@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import"vars";
+
+@mixin font ($size, $style){
+    font-size: $size;
+    font-family: $style;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding:0;
+    min-height: 100vh;  
+    transition-property: all;
+    transition-duration: 5s;
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    header{
+        background-color: $fontColor;
+        img{
+            width:100%;
+        }
+    }
+    nav{
+        display: flex;
+        width: 100%;
+    }
+    main{    
+        grid-area: main;
+        h1{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 20%;
+            color: $fontColor;
+            @include font(2.3em, $fontTitulo);
+        }
+        h2{
+            @include font(2em, $fontTitulo);
+            padding-left: 0px;
+            color: $fontColor;
+        }
+        h3{
+            font-family: $fontTitulo;
+            color: $fontColor;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        p{
+            @include font(1.1em, $fontParrafo);
+            color: $fontColor;
+            text-align: justify;
+            margin-left: 1em;
+            margin-right: 1em;
+            padding-bottom:1em;
+            margin-top: 1.3em;
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+    font-size: 1em;
+    font-family: $fontNav;
+    color:black
+}
+
+header{
+    grid-area: encabezado;
+}
+nav{
+    grid-area: barraNavegacion;
+}
+
+footer{
+    grid-area: pie;
+}
+
+
+.grillaGeneral{
+    display: grid;
+    grid-template-areas: 
+    "encabezado"
+    "barraNavegacion"
+    "main"
+    "pie";
+}
+footer{
+    background-color: black;
+    height: 4em;
+    margin-bottom: 0;
+    padding-top: 5em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    .redes{
+        width: 2em;
+        height: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .copyright{
+        color: $fontColor;
+        font-size:0.6em;
+        font-family: $fontNav;
+    }
+}

@@ -1,0 +1,31 @@
+
+.nosotresImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    margin-bottom: 5em;
+    transition-property: all;
+    transition-duration: 5s;
+}
+.grillaNosotres{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        p{
+            padding-left: 1em;
+            width: 80%;
+        }
+    }
+    .quienesSomosImg{
+        width: 90%;
+        border-image: none;
+    }
+}
+

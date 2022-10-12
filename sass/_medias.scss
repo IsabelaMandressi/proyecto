@@ -1,0 +1,50 @@
+@media screen and (min-width: 500px){
+    .linksDirectos{
+        width: 100%;
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+    }
+    .panuelosButton, .printsButton, .totesButton{
+        margin:2em;
+        margin-bottom: 5em;
+    }
+    .toteBagImg, .panuelosImg {
+        width: 13em;
+        height: 16.2em;
+        }
+    .paperCatalogue, .toteCatalogue, .panueloCatalogue{
+        display:grid;
+        grid-template-columns:repeat(2, 1fr)
+    }
+    p, .pricesList{
+        font-size: 1.2em;
+    }
+    h1{
+        font-size: 3em;
+        margin-bottom: 1em;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    #formGroupInputFour{
+        height: 10em;
+    }
+    .form-control{
+        width: 15em;
+    }
+}
+@media screen and (min-width: 900px){
+    .toteBagImg, .panuelosImg {
+        width: 17em;
+        height: 21.2em;
+        }
+    .printsImg{
+        width: 17em;
+        height: 11.3em;
+    }
+    .paperCatalogue, .toteCatalogue, .panueloCatalogue{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr)
+    }
+}

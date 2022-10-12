@@ -1,0 +1,66 @@
+.cuerpoIndex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .carruselInicio{
+        width: fit-content;
+        height:auto ;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-top: 5em;
+    }
+    .parrafoIndex{
+        padding: 1em;
+        margin-top: 10em;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+.panuelosButton, .printsButton, .totesButton{
+    width: 100%;
+    height: 15em;
+    border-style: none;
+    border-color: none;
+    transition-property: all;
+    transition-duration: 5s;
+}
+
+
+.linksDirectos{
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .printsButton{
+        background-image: url('../img/prints.jpg');
+        background-size: cover;
+        margin-top: 5em;
+        a{
+            color: white;
+            font-size: 2em;
+            font-family: 'Oswald', sans-serif;
+        }
+    }
+    .totesButton{
+        background-image: url('../img/toteBags.JPG');
+        background-size: cover;
+        a{
+            color: white;
+            font-size: 2em;
+            font-family: 'Oswald', sans-serif;
+        }
+    }
+    .panuelosButton{
+        background-image: url('../img/panuelos.jpg');
+        background-size: cover;
+        margin-bottom: 5em;
+        a{
+        color: white;
+        font-size: 2em;
+        font-family: 'Oswald', sans-serif;
+    }
+    }
+}
